@@ -285,7 +285,8 @@ a[target=_blank]:after {
 }
 
 .footer-container {
-  margin: 10px 15%;
+  margin: 10px 18%;
+  font-size: 14px;
 }
 
 @media (min-width: 1024px) {
