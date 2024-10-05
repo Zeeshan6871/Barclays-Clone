@@ -1,6 +1,6 @@
 @font-face {
   font-family: "barclays"; /* Give your font a name */
-  src: url("/fonts/expert-sans-b14.woff2") format("woff"); /* Path to your .woff file */
+  src: url("/fonts/expert-sans-light.woff2") format("woff"); /* Path to your .woff file */
   font-weight: normal; /* Specify the font weight (normal, bold, etc.) */
   font-style: normal; /* Specify the font style (normal, italic, etc.) */
 }
@@ -13,7 +13,7 @@
 
 html,
 body {
-  font-size: 1.0625rem;
+  font-size: 1.3625rem;
   font-family: "barclays", sans-serif;
   font-size: 0.9rem;
   background-color: #fff;
@@ -29,6 +29,10 @@ a {
   list-style: none;
   text-decoration: none;
 }
+a:hover{
+  text-decoration: underline;
+  color: #0074a6;
+}
 a[target=_blank]:after {
   content: "\f12a";
   font-family: "Barclays Icons Fonts";
@@ -36,11 +40,13 @@ a[target=_blank]:after {
 }
 
 
+
+
 .accordion {
   --bs-accordion-color: var(--bs-body-color);
   --bs-accordion-bg: var(--bs-body-bg);
   --bs-accordion-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, border-radius 0.15s ease;
-  --bs-accordion-border-color: var(--bs-border-color);
+  --bs-accordion-border-color: white;
   --bs-accordion-border-width: var(--bs-border-width);
   --bs-accordion-border-radius: var(--bs-border-radius);
   --bs-accordion-inner-border-radius: calc(var(--bs-border-radius) -(var(--bs-border-width)));
@@ -48,11 +54,11 @@ a[target=_blank]:after {
   --bs-accordion-btn-padding-y: 1rem;
   --bs-accordion-btn-color: var(--bs-body-color);
   --bs-accordion-btn-bg: var(--bs-accordion-bg);
-  --bs-accordion-btn-icon: url(data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='%23212529' stroke-linecap='round' stroke-linejoin='round'%3e%3cpath d='M2 5L8 11L14 5'/%3e%3c/svg%3e);
+  /* --bs-accordion-btn-icon: url(data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='%23212529' stroke-linecap='round' stroke-linejoin='round'%3e%3cpath d='M2 5L8 11L14 5'/%3e%3c/svg%3e); */
   --bs-accordion-btn-icon-width: 1.25rem;
   --bs-accordion-btn-icon-transform: rotate(-90deg);
   --bs-accordion-btn-icon-transition: transform 0.2s ease-in-out;
-  --bs-accordion-btn-active-icon: url(data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='%23052c65' stroke-linecap='round' stroke-linejoin='round'%3e%3cpath d='M2 5L8 11L14 5'/%3e%3c/svg%3e);
+  /* --bs-accordion-btn-active-icon: url(data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='%23052c65' stroke-linecap='round' stroke-linejoin='round'%3e%3cpath d='M2 5L8 11L14 5'/%3e%3c/svg%3e); */
   --bs-accordion-btn-focus-box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
   --bs-accordion-body-padding-x: 1.25rem;
   --bs-accordion-body-padding-y: 1rem;
@@ -69,6 +75,7 @@ a[target=_blank]:after {
 .header {
   font-size: 0.875rem;
   color: black !important;
+  position: relative;
 }
 
 .header-container {
@@ -86,8 +93,8 @@ a[target=_blank]:after {
 }
 
 .banner {
-  max-width: 1100px;
-  margin: 5%;
+  max-width: 89%;
+  margin: 4%;
   margin: 0 auto;
   position: relative;
   width: 100%;
@@ -109,10 +116,10 @@ a[target=_blank]:after {
   border-radius: 10px;
   content: "";
   display: inline-block;
-  height: 2.875rem;
+  height: 3.875rem;
   position: relative;
   left: -12px;
-  top: 44px;
+  top: 61px;
   width: 1px;
   z-index: 2;
 }
@@ -121,18 +128,17 @@ a[target=_blank]:after {
   width: 100%;
   max-width: 100%;
   border-spacing: 0;
-  font-size:14px;
+  font-size:1.2rem;
   line-height: 1.5;
   border: 0;
-  border-top: 7px solid #0074a6;
-  border-left: 0.001px solid rgb(189, 187, 187);
-  border-right:  0.001px solid rgb(189, 187, 187);
+  border-top: 7px solid #0074a6 !important;
   text-align: left;
   td,th{
     padding: 16px;
   }
   th{
-    color: darkblue;
+    color: #1b3a57;
+    font-size: 1.5rem;
   }
 }
 
@@ -143,11 +149,12 @@ a[target=_blank]:after {
 
 .wordlogo{
   display: none;
+  margin-left: 5px;
 }
 
 .card-body {
   flex: 1 1 auto;
-  padding: var(--bs-card-spacer-y) var(--bs-card-spacer-x);
+  padding: 2rem;
   color: var(--bs-card-color);
   display: flex;
   justify-content: space-between;
@@ -159,6 +166,7 @@ a[target=_blank]:after {
 .card-title{
   margin-bottom: 1rem;
   font-size: 1.875rem;
+  color: #1b3759;
 }
 .card-text{
   font-size: 1.06rem;
@@ -205,12 +213,14 @@ a[target=_blank]:after {
   --bs-nav-link-padding-y: 0.5rem;
   --bs-nav-link-font-weight: ;
   --bs-nav-link-color: black;
-  --bs-nav-link-hover-color: var(--bs-link-hover-color);
+  --bs-nav-link-hover-color: #0074a6;
   --bs-nav-link-disabled-color: var(--bs-secondary-color);
   display: flex;
   flex-wrap: wrap;
   padding-left: 0;
   margin-bottom: 0;
+  gap: 4px;
+  font-size: 14px;
   list-style: none;
   display: flex;
   flex-wrap: nowrap;
@@ -231,7 +241,7 @@ a[target=_blank]:after {
   border-bottom: var(--bs-nav-tabs-border-width) solid var(--bs-nav-tabs-border-color);
 }
 
-.row {
+.main-row {
   --bs-gutter-x: 1.5rem;
   --bs-gutter-y: 0;
   display: flex;
@@ -241,6 +251,7 @@ a[target=_blank]:after {
   margin-left: calc(-.5* var(--bs-gutter-x));
   line-height: 36px;
   font-size: larger;
+  font-weight: 100;
 }
 
 .accordion-button {
@@ -296,5 +307,9 @@ a[target=_blank]:after {
   }
   .wordlogo{
     display:inline-block;
+  }
+
+  .nav{
+    gap: 25px;
   }
 }
