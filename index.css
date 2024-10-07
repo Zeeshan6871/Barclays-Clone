@@ -253,6 +253,9 @@ a[target=_blank]:after {
     color: #1b3a57;
     font-size: 1.5rem;
   }
+  td{
+    color:#00395d !important;
+  }
 }
 
 .title {
