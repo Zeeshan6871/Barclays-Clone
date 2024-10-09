@@ -35,7 +35,7 @@ a:hover{
 }
 a[target=_blank]:after {
   content: "\f12a";
-  font-family: "Barclays Icons Fonts";
+  font-family: "barclays";
   padding-left: .625rem;
 }
 
@@ -145,6 +145,17 @@ a[target=_blank]:after {
   border-bottom: var(--bs-nav-tabs-border-width) solid var(--bs-nav-tabs-border-color);
 }
 
+/* Show and hide styles */
+.nav-hidden {
+  transform: translateY(-100%);
+  transition: transform 0.3s ease;
+}
+
+.nav-visible {
+  transform: translateY(0);
+  transition: transform 0.3s ease;
+}
+
 .main-row {
   /* --bs-gutter-x: 1.5rem; */
   --bs-gutter-y: 0;
@@ -200,6 +211,10 @@ a[target=_blank]:after {
   align-items: center;
   gap: 20px;
   font-size: large;
+}
+
+.contact{
+  display: none;
 }
 
 .banner {
@@ -318,8 +333,13 @@ a[target=_blank]:after {
   .wordlogo{
     display:inline-block;
   }
-
+  .contact{
+    display: inline-block;
+  }
   .nav{
     gap: 20px;
   }
 }
+
+
+
