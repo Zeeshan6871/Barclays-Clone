@@ -338,7 +338,7 @@ a[target=_blank]:after {
   .img-text1 {
     position: absolute;
     top: 35%;
-    left: 4%;
+    left: 9%;
     -webkit-transform: translateY(-50%);
     transform: translateY(-50%);
     padding-top: 0;
