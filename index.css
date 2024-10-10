@@ -23,10 +23,7 @@ body {
   margin: 0;
   padding: 0;
 }
-
-ul,
-a {
-  list-style: none;
+a{
   text-decoration: none;
 }
 a:hover{
@@ -167,6 +164,9 @@ a[target=_blank]:after {
   line-height: 36px;
   font-size: larger;
   font-weight: 100;
+  ul{
+    list-style: none !important;
+  }
 }
 
 .accordion-button::before {
@@ -228,8 +228,21 @@ a[target=_blank]:after {
   }
 }
 
+.banner1{
+  max-width: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+
 .img-text {
   padding: 20px 20px;
+  p{
+    font-size: 1rem;
+  }
+}
+.img-text1 {
+  padding: 20px 20px;
+  color: #00395d !important;
   p{
     font-size: 1rem;
   }
@@ -319,9 +332,18 @@ a[target=_blank]:after {
     left: 4%;
     -webkit-transform: translateY(-50%);
     transform: translateY(-50%);
-    width: 100%;
     padding-top: 0;
     line-height: 2;
+  }
+  .img-text1 {
+    position: absolute;
+    top: 35%;
+    left: 4%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    padding-top: 0;
+    line-height: 2;
+    color: white !important;
   }
   .title {
     font-size:3.19rem;
