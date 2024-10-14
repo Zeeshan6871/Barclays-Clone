@@ -248,6 +248,7 @@ a[target=_blank]:after {
   }
 }
 
+
 .aperture-left::before {
   background-color: #00aeef;
   border: 2px solid #00aeef;
@@ -366,6 +367,18 @@ a[target=_blank]:after {
 
 .adaptive-image.bordered {
   border: 3px solid #d9d9d9;
+}
+
+
+
+/* Personel Banking Page */
+
+.account-deposite {
+  transform: translate(29px, -51px);
+}
+
+.color-heading{
+  color: #00395d;
 }
 
 
