@@ -30,14 +30,11 @@ a:hover{
   text-decoration: underline;
   color: #0076b6 !important;
 }
-a[target=_blank]:after {
-  content: "\f12a";
-  font-family: "barclays";
+a[target=_blank]::after {
+  content: "\f12a" !important;
+  font-family: "Barclays Icons Fonts";
   padding-left: .625rem;
 }
-
-
-
 
 .accordion {
   --bs-accordion-color: var(--bs-body-color);
