@@ -169,7 +169,9 @@ a[target=_blank]::after {
 
 .footer-row{
   padding: 0px;
-  color: #0074a6 !important;
+  a{
+    color: #0074a6 !important;
+  }
   a:hover{
     color: #00395d !important;
   }
