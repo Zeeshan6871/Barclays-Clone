@@ -169,7 +169,7 @@ a[target=_blank]::after {
 
 .footer-row{
   padding: 0px;
-  color: #0074a6;
+  color: #0074a6 !important;
 }
 
 .mail{
