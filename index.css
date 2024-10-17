@@ -1,14 +1,14 @@
 @font-face {
-  font-family: "barclays"; /* Give your font a name */
-  src: url("/fonts/expert-sans-light.woff2") format("woff"); /* Path to your .woff file */
-  font-weight: normal; /* Specify the font weight (normal, bold, etc.) */
-  font-style: normal; /* Specify the font style (normal, italic, etc.) */
+  font-family: "barclays";
+  src: url("/fonts/expert-sans-light.woff2") format("woff"); 
+  font-weight: normal;
+  font-style: normal;
 }
 @font-face {
-  font-family: "Barclays Icons Fonts"; /* Give your font a name */
-  src: url("/fonts/barclays-icons-new.woff") format("woff"); /* Path to your .woff file */
-  font-weight: normal; /* Specify the font weight (normal, bold, etc.) */
-  font-style: normal; /* Specify the font style (normal, italic, etc.) */
+  font-family: "Barclays Icons Fonts"; 
+  src: url("/fonts/barclays-icons-new.woff") format("woff");
+  font-weight: normal; 
+  font-style: normal;
 }
 
 html,
@@ -170,6 +170,9 @@ a[target=_blank]::after {
 .footer-row{
   padding: 0px;
   color: #0074a6 !important;
+  a:hover{
+    color: #00395d !important;
+  }
 }
 
 .mail{
@@ -331,13 +334,18 @@ a[target=_blank]::after {
 
 .accordion-button {
   display: flex;
-  align-items: center; /* Center icon and text vertically */
+  align-items: center;
 }
 
 .footer-container {
   margin: 10px 18%;
   font-size: 14px;
 }
+
+
+
+
+/* Resposiveness code  */
 
 @media (min-width: 1024px) {
   .img-text {
